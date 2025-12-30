@@ -5,12 +5,12 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        headerShown: true,
+        headerShown: false,
         headerTitleStyle: {
           fontSize: 22,
           fontWeight: "bold"
         },
-        headerStyle: { backgroundColor: "#065f46" }, //change this to bg-green-800 hex code
+        headerStyle: { backgroundColor: "#00262D" }, //change this to bg-green-800 hex code
         headerTintColor: "#ffffff",
         tabBarStyle: { backgroundColor: "#065f46" },
         tabBarActiveTintColor: "#34d339", // Tailwind emerald-500
@@ -18,7 +18,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           title: "Home",
           tabBarIcon: ({ color, size }) => (
@@ -43,17 +43,6 @@ export default function TabLayout() {
           title: "Tracker",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="checkmark-circle-outline" size={size} color={color} />
-          )
-        }}
-      />
-
-
-      <Tabs.Screen 
-        name="prayer-times"
-        options={{
-          title: "Prayer Times",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="time-outline" size={size} color={color}/>
           )
         }}
       />
