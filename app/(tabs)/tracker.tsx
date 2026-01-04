@@ -95,13 +95,16 @@ export default function Tracker() {
           Prayer Tracker
         </Text>
 
-        <TouchableOpacity onPress={() => setShowPrayerHistory(true)}>
-          <MaterialCommunityIcons name="chart-timeline-variant" size={28} color="white" />
-        </TouchableOpacity>
+        <View className="flex-row items-center">
+          <TouchableOpacity onPress={() => setShowPrayerHistory(true)} className="mr-5">
+            <MaterialCommunityIcons name="chart-timeline-variant" size={28} color="white" />
+          </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => setShowCalendar(true)}>
-          <MaterialCommunityIcons name="calendar-month-outline" size={28} color="white" />
-        </TouchableOpacity>
+
+          <TouchableOpacity onPress={() => setShowCalendar(true)}>
+            <MaterialCommunityIcons name="calendar-month-outline" size={28} color="white" />
+          </TouchableOpacity>
+        </View>
       </View>
       
       {/* Today Date */}
